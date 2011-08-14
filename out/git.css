@@ -88,3 +88,49 @@ p.tiny     { font-size: 82%; }
 .stepcurrent { color: black; }
 
 
+body { font-family: Helvetica; }
+
+h1, h2, h3 { color:#455671; }
+
+h1 { text-align: center; }
+
+a:link, a:visited { color: black; }
+
+.slide h1 { font-size: 40pt;  }
+
+.slide h1 {  text-align: center; }
+
+.slide h1.fullscreen { position: absolute;
+                       top: 40%;
+                       width: 100%; }
+
+/* lets you create slides with no heading (because heading is hidden but gets included in toc) */
+
+.slide h1.hidden     { display: none; }
+
+.slide h2 { font-size: 35pt;  }
+
+h3 { font-size: 25pt;  }
+
+p, li, dt, dd, td, th { font-size: 23pt; }
+
+ul { list-style-type: circle; }
+
+pre {
+  background-color: white;
+  border: 2px solid #B05000;
+  padding: 10px;
+}
+
+div.code {
+  background-color: white;
+  border: 2px solid #B05000;
+  padding: 10px; 
+}
+
+div.code pre {
+  background-color: white; 
+  border: 0;
+  padding: 5px;
+}
+
