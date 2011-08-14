@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Git Crash Course</title>
+   
+   
+
+<style>
+html, body { margin: 0; padding: 0; }
+
+body { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+
+a:link, a:visited { color: black; }
+
+h1 { font-size: 30pt;  }
+h2 { font-size: 28pt;  }
+h3 { font-size: 25pt;  }
+p, li, dt, dd, td, th { font-size: 18pt; }
+
+pre { font-size: 14pt;  }
+pre.small { font-size: 11pt; }
+
+pre.code {
+        background-color: azure;
+        padding: 5px;
+      }
+     
+ul { list-style-type: square; }    
+   
+.center { text-align: center; }   
+     
+.slide { page-break-after: always;
+         min-height: 100mm;
+         padding: 40px;
+         
+         border: 1px dotted black;
+
+/*      
+  background: -moz-linear-gradient( top, maroon, red);
+*/
+       }
+
+body { font-family: Helvetica; }
+
+h1, h2, h3 { color:#455671; }
+
+h1 { text-align: center; }
+
+a:link, a:visited { color: black; }
+
+.slide h1 { font-size: 40pt;  }
+
+.slide h1 {  text-align: center; }
+
+.slide h1.fullscreen { position: absolute;
+                       top: 40%;
+                       width: 100%; }
+
+/* lets you create slides with no heading (because heading is hidden but gets included in toc) */
+
+.slide h1.hidden     { display: none; }
+
+.slide h2 { font-size: 35pt;  }
+
+h3 { font-size: 25pt;  }
+
+p, li, dt, dd, td, th { font-size: 23pt; }
+
+ul { list-style-type: circle; }
+
+pre {
+  background-color: white;
+  border: 2px solid #B05000;
+  padding: 10px;
+}
+
+div.code {
+  background-color: white;
+  border: 2px solid #B05000;
+  padding: 10px; 
+}
+
+div.code pre {
+  background-color: white; 
+  border: 0;
+  padding: 5px;
+}
+
+
+
+/*
+for princexml (CSS3 paged media support)
+@page { size: A4 landscape }
+*/
+</style>
+
+</head>
+<body>
+
+<div class="presentation">
+
+<div class='slide '>
+<h1>Git @ Intent Media</h1><p style="text-align:center;"><img src="../images/octocat.png" alt="" /></p>
+
+</div>
+<div class='slide '>
+<h1>Agenda</h1><ul>
+	<li>Git Basics</li>
+	<li>Everyday Git with Intellij</li>
+	<li>Advanced Usages</li>
+</ul>
+
+</div>
+<div class='slide '>
+<h1>Git Basics</h1><h3>What is Git?</h3>
+<ul>
+	<li>Git is a <strong>Distributed</strong> Version Control System
+	<ul>
+		<li>This means the entire history is not only on GitHub but also on everyone&#8217;s machine.</li>
+		<li>This also means that <em>commiting</em> your changes and <em>pushing</em> them are two different things.</li>
+	</ul></li>
+</ul>
+
+</div>
+<div class='slide '>
+<h1>Git Basics</h1><h3>Checking out the code</h3>
+<pre><code>$ git clone git@github.com:intentmedia/code.git
+Initialized empty Git repository in /home/pj/Code/IM/data/.git/
+remote: Counting objects: 738, done.
+remote: Compressing objects: 100% (396/396), done.
+remote: Total 738 (delta 336), reused 680 (delta 279)
+Receiving objects: 100% (738/738), 177.44 KiB, done.
+Resolving deltas: 100% (336/336), done.
+$</code></pre>
+
+</div>
+<div class='slide '>
+<h1>Git Basics</h1><h3>Checking out the code &#8211; Intellij</h3>
+<p style="text-align:center;"><img src="../images/intellij_checkout.png" style="width:80%;" alt="" /></p>
+
+</div>
+<div class='slide '>
+<h1>Why Git</h1><ul>
+	<li>Fast</li>
+	<li>Distributed</li>
+	<li>Branching/Merging</li>
+	<li>So we can use GitHub</li>
+</ul>
+
+</div>
+<div class='slide '>
+<h1>If you ever need help</h1><ul>
+	<li><a href="https://intent-media.campfirenow.com/">Campfire</a></li>
+	<li><a href="http://www.jetbrains.com/idea/webhelp/using-git-integration.html">Intellij Git Integration</a></li>
+	<li><a href="http://help.github.com/">github:help</a></li>
+	<li><a href="http://book.git-scm.com/">git community book</a></li>
+	<li>git man pages available via <code>git help</code> command in terminal</li>
+</ul></div>
+
+
+  </div> <!-- presentation -->
+</body>
+</html> 
+
