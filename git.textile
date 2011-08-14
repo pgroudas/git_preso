@@ -58,7 +58,7 @@ div.code pre {
 
 h1. Git @ Intent Media
 
-p=. !../images/octocat.png!
+p=. !images/octocat.png!
 
 
 h1. Agenda
@@ -91,7 +91,7 @@ h1. Git Basics
 
 h3. Checking out the code - Intellij
 
-p=. !{width:80%;}../images/intellij_checkout.png!
+p=. !{width:80%;}images/intellij_checkout.png!
 
 
 h1. Why Git
