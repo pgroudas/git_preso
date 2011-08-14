@@ -93,6 +93,28 @@ h3. Checking out the code - Intellij
 
 p=. !{width:80%;}images/intellij_checkout.png!
 
+h1. Git Basics
+
+h3. Checking in your changes
+
+bc. $ echo 'Adding this to the README' >> README
+$ git add README
+$ git commit --message 'This is an example of a commit'
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 313 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@github.com:pgroudas/git_preso.git
+   23cc04d..e076226  gh-pages -> gh-pages
+
+h1. Git Basics
+
+h3. Checking in your changes - Intellij
+
+p. ⌘+k
+p=.!{width:80%;}images/intellij_commit.png!
 
 h1. Why Git
 
