@@ -28,7 +28,7 @@ a:link, a:visited { color: black; }
 
 .slide h1.hidden     { display: none; }
 
-.slide h2 { font-size: 35pt;  }
+.slide h2 { font-size: 31pt;  }
 
 h3 { font-size: 25pt;  }
 
@@ -219,6 +219,61 @@ h1. Agenda
 * -Git Basics-
 * -Everyday Git with Intellij-
 * Advanced Usages
+
+h1. Advanced Usages
+
+bq=.:http://en.wikiquote.org/wiki/Stan_Lee "With great power comes great responsibility." -Stan Lee
+
+h1. Advanced Usages
+
+p. Seriously, you should probably skim the "git community book":http://book.git-scm.com/ if you want to use the more advanced features.
+
+h1. Advanced Usages
+
+h2. Feature branches - Idea
+
+# Branch when you start a feature
+# Check in locally as you develop it.
+# When finished, merge back into master and push upstream
+
+h1. Advanced Usages
+
+h2. Feature branches - Benefits
+
+# @master@ branch remains pristine locally.
+# Can checkin frequently even if just a wip without breaking the build.
+# Can work on multiple features in separate branches independently.
+# All check-ins for a given feature are pushed at once (easier to review)
+
+h1. Advanced Usages
+
+h2. Feature branches - Downsides
+
+# More complex (but still possible) to maintain linear history in @master@
+# Promotes longer development 'in a vacuum'
+
+h1. Advanced Usages
+
+h2. Feature branches - Commands
+
+- create a branch := @git branch <branchname>@
+- switch into branch := @git checkout <branchname>@
+- create and switch into branch := @git checkout -b <branchname>@
+- pull in new changes from master := @git rebase master <branchname>@
+- merge changes back to master := @git checkout master; git merge --ff-only <branchname>@
+
+h1. Advanced Usages
+
+h2. Interactive Rebase - Idea
+
+p. You may occasionally accumulate a small number of commits locally before you share them.  Interactive rebasing allows you the oppurtunity to clean up the commits in a number of ways before you push them up stream.
+
+
+h2. Interactive Rebase - Benefits
+
+# Squash multiple commits into one
+# Rewrite your commit messages
+# Group the changed files differently
 
 h1. If you ever need help
 

@@ -61,7 +61,7 @@ a:link, a:visited { color: black; }
 
 .slide h1.hidden     { display: none; }
 
-.slide h2 { font-size: 35pt;  }
+.slide h2 { font-size: 31pt;  }
 
 h3 { font-size: 25pt;  }
 
@@ -268,6 +268,55 @@ To restore the original branch and stop rebasing run "git rebase --abort".</code
 	<li><del>Everyday Git with Intellij</del></li>
 	<li>Advanced Usages</li>
 </ul>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><blockquote cite="http://en.wikiquote.org/wiki/Stan_Lee" style="text-align:center;">
+<p style="text-align:center;">&#8220;With great power comes great responsibility.&#8221; -Stan Lee</p>
+</blockquote>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><p>Seriously, you should probably skim the <a href="http://book.git-scm.com/">git community book</a> if you want to use the more advanced features.</p>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Feature branches &#8211; Idea</h2>
+<ol>
+	<li>Branch when you start a feature</li>
+	<li>Check in locally as you develop it.</li>
+	<li>When finished, merge back into master and push upstream</li>
+</ol>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Feature branches &#8211; Benefits</h2>
+<ol>
+	<li><code>master</code> branch remains pristine locally.</li>
+	<li>Can checkin frequently even if just a wip without breaking the build.</li>
+	<li>Can work on multiple features in separate branches independently.</li>
+	<li>All check-ins for a given feature are pushed at once (easier to review)</li>
+</ol>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Feature branches &#8211; Downsides</h2>
+<ol>
+	<li>More complex (but still possible) to maintain linear history in <code>master</code></li>
+	<li>Promotes longer development &#8216;in a vacuum&#8217;</li>
+</ol>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Feature branches &#8211; Commands</h2>
+<dl>
+	<dt>create a branch</dt>
+	<dd><code>git branch &lt;branchname&gt;</code></dd>
+	<dt>swich branch</dt>
+	<dd><code>git checkout &lt;branchname&gt;</code></dd>
+	<dt>create and switch</dt>
+	<dd><code>git checkout -b &lt;branchname&gt;</code></dd>
+</dl>
 
 </div>
 <div class='slide '>
