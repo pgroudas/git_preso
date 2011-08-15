@@ -181,7 +181,44 @@ p. Most common problems occur while pulling down upstream changes
 
 p=. !{width:80%;}images/intellij_version_control_console.png!
 
+h1. What to do if something goes wrong?
 
+p. Just like any version control system, if multiple users are editing the same files, occasionally you have to resolve conflicts.  Intellij is actually pretty sane about dealing with conflicts and prompts you to resolve them when you update.
+
+p=. !{width:60%;}images/intellij_resolve_conflict.png!
+
+p=. !{width:60%;}images/intellij_merge_tool.png!
+
+h1. What to do if something goes wrong?
+
+h3. You can always revert to the state prior to the rebase operation if you mess up the merge.
+
+* Type @git rebase --abort@ at the command line 
+* _Version Control_ > _Git_ > _Abort Rebasing_ in Intellij menu
+
+h3. You can also use Intellij's merge tool to solve problems you get yourself into on the command line
+
+bc.. pj@onslaught:~/Code/IM/code$ git pull --rebase
+First, rewinding head to replay your work on top of it...
+Applying: PJ:  This is a test commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+Auto-merging adServer/config/production.properties
+CONFLICT (content): Merge conflict in adServer/config/production.properties
+Failed to merge in the changes.
+Patch failed at 0001 PJ:  This is a test commit
+
+When you have resolved this problem run "git rebase --continue".
+If you would prefer to skip this patch, instead run "git rebase --skip".
+To restore the original branch and stop rebasing run "git rebase --abort".
+
+p. Merge tool is accessible via _Version Control_ > _Git_ > _Merge Tool_
+
+
+h1. Agenda
+* -Git Basics-
+* -Everyday Git with Intellij-
+* Advanced Usages
 
 h1. If you ever need help
 

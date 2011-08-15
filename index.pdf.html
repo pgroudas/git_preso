@@ -234,6 +234,43 @@ Fast-forwarded master to db46daeff68ab4d58283cc5f504baceb7193a4fa.</code></pre>
 
 </div>
 <div class='slide '>
+<h1>What to do if something goes wrong?</h1><p>Just like any version control system, if multiple users are editing the same files, occasionally you have to resolve conflicts.  Intellij is actually pretty sane about dealing with conflicts and prompts you to resolve them when you update.</p>
+<p style="text-align:center;"><img src="images/intellij_resolve_conflict.png" style="width:60%;" alt="" /></p>
+<p style="text-align:center;"><img src="images/intellij_merge_tool.png" style="width:60%;" alt="" /></p>
+
+</div>
+<div class='slide '>
+<h1>What to do if something goes wrong?</h1><h3>You can always revert to the state prior to the rebase operation if you mess up the merge.</h3>
+<ul>
+	<li>Type <code>git rebase --abort</code> at the command line</li>
+	<li><em>Version Control</em> &gt; <em>Git</em> &gt; <em>Abort Rebasing</em> in Intellij menu</li>
+</ul>
+<h3>You can also use Intellij&#8217;s merge tool to solve problems you get yourself into on the command line</h3>
+<pre><code>pj@onslaught:~/Code/IM/code$ git pull --rebase
+First, rewinding head to replay your work on top of it...
+Applying: PJ:  This is a test commit
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+Auto-merging adServer/config/production.properties
+CONFLICT (content): Merge conflict in adServer/config/production.properties
+Failed to merge in the changes.
+Patch failed at 0001 PJ:  This is a test commit</code>
+
+<code>When you have resolved this problem run "git rebase --continue".
+If you would prefer to skip this patch, instead run "git rebase --skip".
+To restore the original branch and stop rebasing run "git rebase --abort".</code></pre>
+<p>Merge tool is accessible via <em>Version Control</em> &gt; <em>Git</em> &gt; <em>Merge Tool</em></p>
+
+</div>
+<div class='slide '>
+<h1>Agenda</h1><ul>
+	<li><del>Git Basics</del></li>
+	<li><del>Everyday Git with Intellij</del></li>
+	<li>Advanced Usages</li>
+</ul>
+
+</div>
+<div class='slide '>
 <h1>If you ever need help</h1><ul>
 	<li><a href="https://intent-media.campfirenow.com/">Campfire</a></li>
 	<li><a href="http://www.jetbrains.com/idea/webhelp/using-git-integration.html">Intellij Git Integration</a></li>
