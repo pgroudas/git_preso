@@ -8,11 +8,11 @@ var Slideshow = {};
  */
 
 Slideshow.transition = function( $from, $to ) {
-  // $from.hide();
-  // $to.show();
+   $from.hide();
+   $to.show();
   
-  $from.hide('fast');
-  $to.show('fast'); 
+  //$from.hide('fast');
+  //$to.show('fast'); 
 }
 
 /***********************
