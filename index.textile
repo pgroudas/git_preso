@@ -146,10 +146,25 @@ h4. Handles your unclean working tree for you!
 p=. !{width:80%;}images/intellij_update.png!
 
 
-h1. Rebasing
-p. "http://book.git-scm.com/4_rebasing.html":http://book.git-scm.com/4_rebasing.html
+h1. Git Basics
 
+h3. Rebasing[1]
 
+table{width:100%;}.
+|_. Before            |_. After             |
+| !images/before.png!  | !images/rebase.png!  |
+
+fn1. "http://book.git-scm.com/4_rebasing.html":http://book.git-scm.com/4_rebasing.html 
+
+h1. Git Basics
+
+h3. Merge[2]
+
+table{width:100%;}.
+|_. Before            |_. After             |
+| !images/before.png!  | !images/merge.png!  |
+
+fn2. "http://book.git-scm.com/3_basic_branching_and_merging.html":http://book.git-scm.com/3_basic_branching_and_merging.html
 
 h1. If you ever need help
 
