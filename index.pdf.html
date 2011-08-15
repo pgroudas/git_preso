@@ -312,11 +312,39 @@ To restore the original branch and stop rebasing run "git rebase --abort".</code
 <dl>
 	<dt>create a branch</dt>
 	<dd><code>git branch &lt;branchname&gt;</code></dd>
-	<dt>swich branch</dt>
+	<dt>switch into branch</dt>
 	<dd><code>git checkout &lt;branchname&gt;</code></dd>
-	<dt>create and switch</dt>
+	<dt>create and switch into branch</dt>
 	<dd><code>git checkout -b &lt;branchname&gt;</code></dd>
+	<dt>pull in new changes from master</dt>
+	<dd><code>git rebase master &lt;branchname&gt;</code></dd>
+	<dt>merge changes back to master</dt>
+	<dd><code>git checkout master; git merge --ff-only &lt;branchname&gt;</code></dd>
 </dl>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Interactive Rebase &#8211; Idea</h2>
+<p>You may occasionally accumulate a small number of commits locally before you share them.  Interactive rebasing allows you the oppurtunity to clean up the commits in a number of ways before you push them up stream.</p>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Interactive Rebase &#8211; Benefits</h2>
+<ol>
+	<li>Squash multiple commits into one</li>
+	<li>Rewrite your commit messages</li>
+	<li>Group the changed files differently</li>
+</ol>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Interactive Rebase &#8211; Example</h2>
+<p style="text-align:center;"><img src="images/terminal_rebase_1.png" style="height:60%;" alt="" /></p>
+
+</div>
+<div class='slide '>
+<h1>Advanced Usages</h1><h2>Interactive Rebase &#8211; Example</h2>
+<p style="text-align:center;"><img src="images/terminal_rebase_2.png" style="height:60%;" alt="" /></p>
 
 </div>
 <div class='slide '>
